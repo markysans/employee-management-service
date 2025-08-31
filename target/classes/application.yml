@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: employee-management-service
+
+server:
+  port: 8080
