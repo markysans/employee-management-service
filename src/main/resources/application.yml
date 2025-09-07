@@ -2,5 +2,21 @@ spring:
   application:
     name: employee-management-service
 
+  datasource:
+    url: jdbc:mysql://localhost:3306/mycelia_db
+    username: root
+    password: root@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
 server:
   port: 8080
+
+mycelia:
+  jwt:
+    secret: SecretKeyForJWTGeneration9083430
